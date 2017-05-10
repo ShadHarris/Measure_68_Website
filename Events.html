@@ -18,7 +18,7 @@
 
 
 
-    <title>Save Athletics</title>
+    <title>Yes on 68</title>
 
 
 
@@ -60,7 +60,7 @@
 
     <div class="header-wrapper">
 
-			 <div class="site-name">
+			<div class="site-name">
 
         <h1>Measure 68</h1>
 
@@ -68,7 +68,71 @@
 
       </div>
 
+			<div id ="Sponsors" class="Sponsors">
+					<p>A Big thanks to our Sponsors and Endorsers:</p>
+					<ul class="Sponslist" style="-moz-columns: 3;columns: 3;width: 375px;">
+						<li>Oakes College</li>
+						<li>Kresge College</li>
+						<li>Crown College</li>
+						<li>College Nine</li>
+						<li>Rachel Carson College</li>
+						<li>Stevenson College</li>
+						<li>SUA</li>
+						<li>EOP</li>
+						<li>OPERS</li>
+						<li>Sammy</li>
+					</ul>
+				</div>
     </div>
+
+		<div id="cd-timer" class="countdown-wrapper">
+
+				<button id="myBtn" style = "display:none" onclick="location.href='#'">Vote Now</button>
+
+				<p id="timer-id" style ="display: contents"></p>
+
+				<div  class="countdown-timer">
+
+					<script>
+						var y = document.getElementById("myBtn");
+						var z = document.getElementById("timer-id");
+						var cd = document.getElementById("cd-timer");
+
+						// Set the date we're counting down to
+						var countDownDate = new Date("May 17, 2017 00:01:00").getTime();
+
+						// Update the count down every 1 second
+						var x = setInterval(function() {
+
+						// Get todays date and time
+						var now = new Date().getTime();
+
+						// Find the distance between now an the count down date
+						//var distance = countDownDate - now;
+						var distance = -1;
+
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+						// Display the result in the element with id="demo"
+						document.getElementById("timer-id").innerHTML ="Voting begins in: " + days + "d " + hours + "h "
+						+ minutes + "m ";
+
+						// If the count down is finished, write some text
+						if (distance < 0) {
+							clearInterval(x);
+							z.style = 'display: none';
+					    y.style = 'display: contents';
+							cd.style.textAlign = "center";
+						}
+						}, 1000);
+					</script>
+
+				</div>
+
+			</div>
 
     <div class="menu">
 
@@ -96,7 +160,10 @@
 
               <li><a href="Events.html">Events</a></li>
 
+							<li><a href="Pictures.html">Pictures</a></li>
+
               <li><a href="FAQ.html">FAQ</a></li>
+
 
             </ul>
 
@@ -112,11 +179,13 @@
 
           <select class="selectnav">
 
-            <option value="#" selected="">Home</option>
+            <option value="index.html" selected="">Home</option>
 
             <option value="About.html">About</option>
 
-            <option value="Events.html">→ Events</option>
+            <option value="Events.html">Events</option>
+
+						<option value="Pictures.html">Pictures</option>
 
             <option value="FAQ.html">→ FAQ</option>
 
@@ -127,6 +196,25 @@
           </div>
 
     </div>
+
+
+            <ul class="social">
+
+              <li><a href="#"><i class="fw-icon-twitter"></i></a></li>
+
+              <li><a href="#"><i class="fw-icon-facebook"></i></a></li>
+
+              <li><a href="#"><i class="fw-icon-linkedin"></i></a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        </div>
+
+      </div>
 
       <div class="copy-rights">
 
