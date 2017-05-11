@@ -250,10 +250,17 @@ button:hover {
 .featured-block{padding:55px 0; overflow: hidden;}
 .featured-block .col-md-3{
 	width: 50%;
+	
+}
+.featured-block .col-md-3 .block{
+	height: 600px;
 }
 .featured-item .col-md-6{
-	width: 33%;
-	height: 200px;
+	text-align: center;
+	width: 380px;
+	height: 800px;
+	padding-right: 2px;
+	padding-left: 2px;
 }
 .fa{
 	padding: 10px;
@@ -303,10 +310,35 @@ button:hover {
 	opacity: 0.7;
 }
 .featured-block .block{}
-.featured-block .block .thumbnail{box-shadow: 0 3px 3px 0 #e0e0e0;}
-.featured-block .caption{padding: 25px 15px;}
-.featured-block .caption h1{font-size: 18px; line-height: 24px;color: #62CCDB; text-transform: uppercase;font-family: 'source_sans_probold';  padding-bottom: 10px; letter-spacing: 1px;}
-.featured-block .caption p{font-size: 14px; line-height: 24px; color: #888888;font-family: 'source_sans_proregular';}
+.featured-block .block .thumbnail{
+	box-shadow: 0 3px 3px 0 #e0e0e0;
+}
+.featured-block .caption{
+	padding: 25px 15px;
+	background-color: lightgrey;
+	color: black;
+}
+.featured-block .caption h1{
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+	text-transform: uppercase;
+	font-family: 'source_sans_probold';
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.featured-block .caption p{
+	font-size: 15px;
+	line-height: 24px;
+	font-family: 'Raleway';
+	display: inline;
+	text-align: left;
+}
+.featured-block .caption li{
+	text-transform: uppercase;
+	font-size: 15px;
+}
 .featured-block .caption .btn{color: #fff; background: #62CCDB; font-size: 12px; font-family: 'source_sans_problack'; border-radius: 30px; text-transform: uppercase; line-height: 13px;}
 .featured-block .caption .btn:hover{color: #fff; background: #454855; transition:all 1s;}
 
@@ -406,3 +438,16 @@ margin-top: 10px;
 /************************************************
     Responsive Tweaks starts here
  ************************************************/
+.caption p.ia{
+	color: #5EA55C;
+}
+.caption p.student-aid{
+	color: #3A87AD;
+}
+.caption p.eop{
+	color: #F2FF21;
+}
+.about-container{
+	padding: 20px;
+	background-color: white;
+}

@@ -12,13 +12,13 @@
 
     <meta name="description" content="">
 
-    <meta name="author" content="Shad Harris & Justin Fortner">
+    <meta name="author" content="Shad Harris & Cody Chacon">
 
 
 
 
 
-    <title>Save Athletics</title>
+    <title>Yes on 68</title>
 
 
 
@@ -37,6 +37,14 @@
 	 	<link rel="stylesheet" href="css/demo.css">
 
     <link rel="stylesheet" href="css/font-awesome-ie7.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+		
 
     <script src="js/jquery.mobilemenu.js"></script>
 
@@ -64,11 +72,70 @@
 
         <h1>Measure 68</h1>
 
-        <h2>Athletics for Everyone</h2>
+        <h2>Access for Everyone</h2>
 
       </div>
 
+			<div class="Sponsors">
+					<p>A Big thanks to our Sponsors and Endorsers:</p>
+					<ul class="Sponslist" style="-moz-columns: 3;columns: 3;width: 375px;">
+						<li>Oakes College</li>
+						<li>Kresge College</li>
+						<li>Crown College</li>
+						<li>College Nine</li>
+						<li>Rachel Carson College</li>
+						<li>Stevenson College</li>
+						<li>SUA</li>
+						<li>EOP</li>
+						<li>OPERS</li>
+						<li>Sammy</li>
+					</ul>
+				</div>
+
     </div>
+		<div class="countdown-wrapper">
+
+		<button id="myBtn" style = "display:none" onclick="location.href='#'">Vote Now</button>
+
+		<p id="timer-id" style ="display: contents"></p>
+
+		<div class="countdown-timer">
+
+			<script>
+				var y = document.getElementById("myBtn");
+				var z = document.getElementById("timer-id");
+				// Set the date we're counting down to
+				var countDownDate = new Date("May 17, 2017 00:01:00").getTime();
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+				// Display the result in the element with id="demo"
+				document.getElementById("timer-id").innerHTML ="Voting begins in: " + days + "d " + hours + "h "
+				+ minutes + "m ";
+
+				// If the count down is finished, write some text
+				if (distance < 0) {
+					clearInterval(x);
+					z.style = 'display: none';
+					y.style = 'display: inline-block';
+				}
+				}, 1000);
+			</script>
+
+		</div>
+
+	</div>
 
     <div class="menu">
 
@@ -112,7 +179,7 @@
 
           <select class="selectnav">
 
-            <option value="#" selected="">Home</option>
+            <option value="index.html" selected="">Home</option>
 
             <option value="About.html">About</option>
 
@@ -127,6 +194,72 @@
           </div>
 
     </div>
+		<div class="about-container">
+    <div class="content">
+			<h1>Why is the Fee Needed?</h1>
+        <p>Athletics at UCSC is currently running on a defecit. Continuing on the way we are, athletics will no longer be a part of this university in years to come. This fee is necessary to keep athletics on this campus while maintaining a price comparabely lower than that of any other UC or CSU school. Athletics provides students with a way to relieve stress, find emotional stability, feel good about themselves, and much more. It is important for promoting physical and mental well being and is something that should not be overlooked as insignificant.</p>
+		</div>
+	</div>
+		<div class="about-container">
+      <h2>Main Points</h2>
+
+			<ul class="points">
+				<li>The goal of this measure is to create long-term continuous support for intercollegiate athletics.</li>
+				<li>Enact a new fee of $38.50 per student, per quarter. Fee will generate approximately $2,000,000 per year.</li>
+				<li>Passing of this fee is required to maintain an intercollegiate athletics program (NCAA Division-III) at UCSC.</li>
+				<li>59% of the fee will go to Intercollegiate Athletics</li>
+        <li>8% will generate approximately $160,000 to provide access for athletics-related activities and services for students who meet EOP criteria (to be allocated by EOP).</li>
+        <li>EOP students currently represent approximately 40% of the student population.</li>
+      	<li>The fee begins Fall Quarter 2017 with an end date of Spring Quarter 2042.</li>
+      </ul>
+
+      <h4> For more information see <a href="Intercollegiate_Athletics_Fee_Final_051017.pdf">Referendum Full Documentation</a></h4>
+      </div>
+
+			<div class="footer-wrapper">
+
+        <div class="site-content">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="block col-md-2 col-sm-6">
+
+            <h1>Pages</h1>
+
+            <ul>
+
+              <li><a href="About.html">About</a></li>
+
+              <li><a href="Events.html">Events</a></li>
+
+              <li><a href="FAQ.html">FAQ</a></li>
+
+            </ul>
+
+          </div>
+
+
+            <ul class="social">
+
+							<h1>Social</h1>
+
+              <li><a href='https://www.facebook.com/UCSC.Athletics/' class="fa fa-facebook"></a></li>
+
+							<li><a href='https://www.instagram.com/ucscathletics/' class="fa fa-instagram"></a></li>
+
+							<li><a href='https://twitter.com/UCSCAthletics' class="fa fa-twitter"></a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        </div>
+
+      </div>
 
       <div class="copy-rights">
 
@@ -136,7 +269,7 @@
 
             <div class="col-md-6">
 
-              Copyright(c) ucscyes68.com. Designed by: Shad Harris & Justin Fortner</a>
+              Copyright(c) ucscyes68.com. Designed by: Shad Harris, Cody Chacon & Justin Fortner</a>
 
             </div>
 
@@ -153,16 +286,7 @@
       </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-    <!-- Bootstrap core JavaScript
+<!-- Bootstrap core JavaScript
 
     ================================================== -->
 
@@ -179,5 +303,4 @@
 
 
   </body>
-
 </html>

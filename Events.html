@@ -36,6 +36,8 @@
 
 	 	<link rel="stylesheet" href="css/demo.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/font-awesome-ie7.css">
 
     <script src="js/jquery.mobilemenu.js"></script>
@@ -68,7 +70,66 @@
 
       </div>
 
+			<div class="Sponsors">
+					<p>A Big thanks to our Sponsors and Endorsers:</p>
+					<ul class="Sponslist" style="-moz-columns: 3;columns: 3;width: 375px;">
+						<li>Oakes College</li>
+						<li>Kresge College</li>
+						<li>Crown College</li>
+						<li>College Nine</li>
+						<li>Rachel Carson College</li>
+						<li>Stevenson College</li>
+						<li>SUA</li>
+						<li>EOP</li>
+						<li>OPERS</li>
+						<li>Sammy</li>
+					</ul>
+				</div>
+
     </div>
+		<div class="countdown-wrapper">
+
+		<button id="myBtn" style = "display:none" onclick="location.href='#'">Vote Now</button>
+
+		<p id="timer-id" style ="display: contents"></p>
+
+		<div class="countdown-timer">
+
+			<script>
+				var y = document.getElementById("myBtn");
+				var z = document.getElementById("timer-id");
+				// Set the date we're counting down to
+				var countDownDate = new Date("May 17, 2017 00:01:00").getTime();
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+				// Display the result in the element with id="demo"
+				document.getElementById("timer-id").innerHTML ="Voting begins in: " + days + "d " + hours + "h "
+				+ minutes + "m ";
+
+				// If the count down is finished, write some text
+				if (distance < 0) {
+					clearInterval(x);
+					z.style = 'display: none';
+					y.style = 'display: inline-block';
+				}
+				}, 1000);
+			</script>
+
+		</div>
+
+	</div>
 
     <div class="menu">
 
@@ -112,7 +173,7 @@
 
           <select class="selectnav">
 
-            <option value="#" selected="">Home</option>
+            <option value="index.html" selected="">Home</option>
 
             <option value="About.html">About</option>
 
@@ -128,15 +189,270 @@
 
     </div>
 
+    <!-- top1 -->
+
+    <div class="container">
+
+    <div class="featured-block">
+
+      <!-- Example row of columns -->
+
+      <div class="row">
+
+          <div class="col-md-3">
+
+            <div class="block">
+
+              <div class="thumbnail">
+
+                <img src="" alt="" class="img-responsive">
+
+                <div class="caption">
+
+                  <h1>Tabing</h1>
+
+                  <p>All Colleges
+                  5/12-5/16</p>
+
+                  <a class="btn" href="#">More Information</a>
+
+                </div>
+
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+
+          <div class="block">
+
+          <div class="thumbnail">
+
+            <img src="" alt="" class="img-responsive">
+
+            <div class="caption">
+
+              <h1>Portable Poling Station</h1>
+
+              <p>All Colleges and OPERS
+              5/17-5/23</p>
+
+              <a class="btn" href="#">More Information</a>
+
+            </div>
+
+            </div>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ruler"></div>
+
+      </div>
+
+    <!-- bottom1 -->
+
+<!-- Top2 -->
+
+    <div class="container">
+
+    <div class="featured-block">
+
+      <!-- Example row of columns -->
+
+      <div class="row">
+
+          <div class="col-md-3">
+
+            <div class="block">
+
+              <div class="thumbnail">
+
+                <img src="" alt="" class="img-responsive">
+
+                <div class="caption">
+
+                  <h1>Holifest</h1>
+
+                  <p>5/19 2PM-6PM</p>
+
+                  <a class="btn" href="#">More Information</a>
+
+                </div>
+
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+
+          <div class="block">
+
+          <div class="thumbnail">
+
+            <img src="" alt="" class="img-responsive">
+
+            <div class="caption">
+
+              <h1>Rally</h1>
+
+              <p>6PM-9PM</p>
+
+              <a class="btn" href="#">More Information</a>
+
+            </div>
+
+            </div>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ruler"></div>
+
+      </div>
+<!-- bottom2 -->
+
+<!-- top3 -->
+
+<div class="container">
+
+<div class="featured-block">
+
+  <!-- Example row of columns -->
+
+  <div class="row">
+
+      <div class="col-md-3">
+
+        <div class="block">
+
+          <div class="thumbnail">
+
+            <img src="" alt="" class="img-responsive">
+
+            <div class="caption">
+
+              <h1>Spring Splash</h1>
+
+              <p>05/20 12PM-3PM</p>
+
+              <a class="btn" href="#">More Information</a>
+
+            </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-3">
+
+      <div class="block">
+
+      <div class="thumbnail">
+
+        <img src="" alt="" class="img-responsive">
+
+        <div class="caption">
+
+          <h1>Cruzfest</h1>
+
+          <p>05/21 11AM-3PM</p>
+
+          <a class="btn" href="#">More Information</a>
+
+        </div>
+
+        </div>
+
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="ruler"></div>
+
+  </div>
+
+<!-- bottom3 -->
+
+<!-- top4 -->
+
+<div class="container">
+
+<div class="featured-block">
+
+  <!-- Example row of columns -->
+
+  <div class="row">
+
+      <div class="col-md-3">
+
+        <div class="block">
+
+          <div class="thumbnail">
+
+            <img src="" alt="" class="img-responsive">
+
+            <div class="caption">
+
+              <h1>Slugs Feeding Slugs</h1>
+
+              <p>TBD</p>
+
+              <a class="btn" href="#">More Information</a>
+
+            </div>
+
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="ruler"></div>
+
+  </div>
+
+<!-- bottom4 -->
+
       <div class="copy-rights">
 
-      <div class="container">
+      <div class="container2">
 
         <div class="row">
 
             <div class="col-md-6">
 
-              Copyright(c) ucscyes68.com. Designed by: Shad Harris & Justin Fortner</a>
+              Copyright(c) ucscyes68.com. Designed by: Shad Harris, Cody Chacon & Justin Fortner</a>
 
             </div>
 
